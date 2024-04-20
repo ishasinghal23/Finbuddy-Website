@@ -1,0 +1,79 @@
+/* Loginstyles.css */
+.login-bg{
+  background-image: url('bg.jpg'); /* Set the background image */
+  background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	overflow-x: hidden; /* Center the image */
+}
+.login-form-container {
+  max-width: 400px;
+  margin: 95px auto; /* Add margin-top to push it down */
+  padding: 30px;
+  border-radius: 8px;
+  color: #e4e3e3;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+  
+  .login-title {
+    text-align: center;
+    color: #f1dbdb;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-label {
+    margin-bottom: 5px;
+    color: #e3d1d1;
+  }
+  
+  .login-input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .login-input:focus {
+    outline: none;
+    border-color: #9E7676;
+    box-shadow: 0 0 8px rgba(17, 17, 21, 0.4);
+  }
+  
+  .login-button {
+    background-color: #8c5555;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background-color: #594545;
+  }
+  
+  .login-register-link {
+    margin-top: 15px;
+    text-align: center;
+    color: #c5bfbf;
+  }
+  
+  .login-register-link a {
+    color: #dbb6b6;
+    text-decoration: none;
+  }
+  
+  .login-register-link a:hover {
+    text-decoration: underline;
+  }
+  

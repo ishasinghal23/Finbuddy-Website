@@ -1,0 +1,59 @@
+/* Dashboard.css */
+
+.dashboard {
+    background-image: url('./homebg2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  .link-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .link {
+    color: white !important;
+    text-decoration: none !important;
+    font-family: 'Belleza', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    transition: transform 0.3s ease; 
+  }
+  
+  .left-link:hover {
+    transform: translateX(20px);
+  }
+  
+  .right-link:hover {
+    transform: translateX(-20px); /* Shift to the left on hover for the right link */
+  }
+
+  .left-link {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 100px 0 0 70px; /* Adjust top padding as needed */
+  }
+  
+  .right-link {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 450px 80px 0 0; /* Adjust bottom padding as needed */
+  }
+
+ 
+  
+  .dashboard-link {
+    color: white !important;
+    text-decoration: none !important;
+    font-family: 'Belleza', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+  }
+

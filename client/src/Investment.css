@@ -1,0 +1,127 @@
+/* Styles for the investment container */
+.investment-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust the height as needed */
+}
+
+/* Styles for the split background */
+.split-background {
+    display: flex;
+    width: 100%;
+    position: relative; /* Make the container relative to position pseudo-element */
+}
+
+.split-left,
+.split-right {
+    flex: 1;
+    height: 100vh; /* Adjust the height as needed */
+}
+
+.split-left::before,
+.split-right::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1); /* Adjust the opacity as needed */
+}
+
+.split-left {
+    background-color: #cd8e98; /* Left side background color */
+}
+
+.split-right {
+    background-color: #ddbaba; /* Right side background color */
+}
+
+/* Styles for the animated box */
+.animate-box {
+    position: relative; /* Ensure the z-index works correctly */
+    z-index: 1; /* Ensure the box stays above the pseudo-element */
+    width: 350px;
+    height: 350px;
+    background-image: url('stock.jpg'); /* Add the background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 150px;
+    margin-left: 140px;
+    animation: fadeIn 1s forwards;
+/* Adjust the margin to push the box downwards */
+}
+
+.animate-box::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Adjust the opacity as needed */
+    border-radius: 10px;
+    opacity: 0.9;
+}
+
+/* Hover effect */
+.animate-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+
+/* Styles for the heading */
+.animate-box h2 {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+
+/* Styles for the animated box on the left */
+.split-left .animate-box {
+    background-image: url('stock.jpg'); /* Left box background image */
+}
+
+/* Styles for the animated box on the right */
+.split-right .animate-box {
+    background-image: url('crypto.jpg'); /* Right box background image */
+}
+
+
+
+/* Keyframes for fade in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+    .animate-box {
+        width: 250px;
+        height: 250px;
+        margin: 30px;
+        margin-top: 165px;
+    }
+
+    .animate-box h2 {
+        font-size: 1.2em;
+    }
+}

@@ -1,0 +1,57 @@
+/* Formstyles.css */
+.page-background {
+  background-image: url('bg.jpg'); /* Set the background image */
+  background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	overflow-x: hidden; /* Center the image */
+}
+.form-container {
+    max-width: 400px;
+    margin: 95px auto; /* Add margin-top to push it down */
+    padding: 30px;
+    border-radius: 8px;
+    color: #e4e3e3;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+  color: #fffefe;
+  font-weight: bold;
+  
+}
+
+.input-container{
+  margin-top: 10px;
+  margin-bottom: 12px; /* Adjust the margin-bottom as needed */
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #d6d1d1;
+  border: 1px solid #837f7f;
+  border-radius: 4px;
+}
+
+.radio-input {
+  margin-top: 7px;
+  margin-bottom: 12px;
+  color: #a39d9d;
+}
+
+button {
+  background-color: #271e1e;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px; /* Adjust the margin-top as needed */
+}
+
+button:hover {
+  background-color:#271e1e;
+}

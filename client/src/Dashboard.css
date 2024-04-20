@@ -1,0 +1,113 @@
+/* Dashboard Container */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5ebea;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+
+.space-above {
+  margin-top: 50px; /* Adjust the value as needed */
+}
+
+.dashboard-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Top Container */
+.top-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-bottom: 20px;
+  margin-top: -20px;
+}
+
+/* Comparison Container */
+.comparison-container {
+  width: 48%;
+}
+
+/* Chart Container */
+.chart-container {
+  width: 50%;
+  margin-top: 130px;
+}
+
+/* Tables Container */
+.tables-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+}
+
+/* Positive & Negative Tables */
+.positive-table,
+.negative-table {
+  width: 48%;
+}
+
+/* Table Container */
+.table-container {
+  margin-bottom: 20px;
+}
+
+/* Styling for Tables */
+table {
+  width: 100%;
+  
+  transition: all 0.3s ease;
+  border-collapse: collapse;
+  background-color: #f2e4e4;
+  border-radius: 4px; /* Increase border-radius for rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  overflow: hidden;
+  transition: box-shadow 0.3s; /* Light background color for tables */
+}
+
+th,
+td {
+  border: 1px solid #e0d1d3;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #b16b82;
+}
+/* 
+tr:nth-child(even) {
+  background-color: #B47B84;
+} */
+
+tr:hover {
+  background-color: #d8bfc2;
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
+
+/* Media Queries for Responsiveness */
+@media only screen and (max-width: 768px) {
+  .top-container {
+    flex-direction: column;
+  }
+
+  .comparison-container,
+  .chart-container {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .positive-table,
+  .negative-table {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
